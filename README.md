@@ -56,17 +56,14 @@ Traffic Monitoring Dashboard
 
 ## Frontend / Dashboard ##
 
-• Streamlit
+• HTML
+• CSS
+• JavaScript
 
 ## Computer Vision ##
 
 • OpenCV
 • YOLOv8
-
-## Data Visualization ##
-
-• Plotly
-• Pandas
 
 ## Version Control ##
 
@@ -86,15 +83,9 @@ Traffic Monitoring Dashboard
 
 # Demo
 
-A short demonstration video of the system is included in the repository.
+Demo video used for vehicle detection is not uploaded due to GitHub file size limits.
+You can use any traffic video or CCTV footage for testing.
 
-It shows:
-
-• vehicle detection
-
-• signal timing updates
-
-• traffic dashboard interface
 
 # Future Improvements
 
@@ -107,3 +98,117 @@ It shows:
 • AI-based traffic prediction models
 
 • Smart city integration
+
+
+
+.
+
+## 🚧 Current Implementation Status ##
+
+This project is currently in the prototype / simulation stage.
+
+Since we do not have access to live CCTV feeds from real traffic intersections, the system uses simulated traffic data to demonstrate how the full smart traffic management pipeline would function in a real-world deployment.
+
+The simulation allows us to demonstrate:
+
+• Multi-intersection traffic monitoring (Area A, Area B, Area C)
+
+• Lane-wise vehicle density estimation
+
+• Dynamic traffic signal timing
+
+• Traffic signal communication network
+
+• Emergency Green Corridor generation for ambulances
+
+• Smart traffic control room dashboard
+
+All these components are connected through a central traffic state data store that mimics how real traffic infrastructure would exchange data.
+
+📡 Data Source (Simulation)
+
+At present, randomly generated traffic data is used to simulate vehicle flow across different intersections.
+
+This simulated data represents:
+
+• Vehicle counts per lane
+
+• Traffic density at each signal
+
+• Signal timing allocation
+
+• Traffic signal communication between intersections
+
+• Emergency vehicle scenarios
+
+In a real deployment, this data would be generated from:
+
+• CCTV traffic cameras
+
+• Edge AI detection models (YOLO / TensorRT)
+
+• IoT traffic sensors
+
+• Smart traffic signal controllers
+
+## 🤖 AI Vehicle Detection ##
+
+The vehicle detection module uses a YOLOv8 deep learning model to detect:
+
+• Cars
+
+• Buses
+
+• Trucks
+
+• Motorcycles
+
+• Pedestrians
+
+from traffic video footage.
+
+Currently:
+
+• The vehicle_detection.py module is fully functional and performs real vehicle detection from video input.
+
+• The remaining components operate on simulated traffic data until real CCTV integration becomes available.
+
+## 🧪 Prototype Modules (Simulation) ##
+
+The following modules currently run using simulated data:
+
+Module	Purpose --
+camera_simulator.py	:Generates simulated lane traffic data
+reinforcement_controller.py	:Allocates signal timing dynamically
+signal_network.py	:Simulates communication between traffic lights
+green_corridor.py	:Creates emergency routes for ambulances
+
+These modules demonstrate the system architecture and algorithm design of the proposed solution.
+
+## 🏙 Future Integration (Real Smart City Deployment) ##
+
+With access to real traffic infrastructure, the system can be integrated with:
+
+• CCTV traffic camera feeds
+
+• Edge AI vehicle detection
+
+• IoT traffic signal controllers
+
+• Real-time traffic databases
+
+• City emergency response systems
+
+This would enable:
+
+• Real-time traffic density estimation
+
+• Adaptive signal timing using reinforcement learning
+
+• Automated emergency green corridors
+
+• City-scale traffic optimization
+
+## ⚠️ Note ##
+
+This repository demonstrates the architecture and AI workflow of a smart traffic management system, while using simulated data where real infrastructure is not currently available.
