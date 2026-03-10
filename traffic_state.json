@@ -1,0 +1,82 @@
+{
+  "traffic": {
+    "Area A": {
+      "Signal 1": {
+        "Lane 1": 22,
+        "Lane 2": 8,
+        "Lane 3": 18,
+        "Lane 4": 19
+      },
+      "Signal 2": {
+        "Lane 1": 12,
+        "Lane 2": 18,
+        "Lane 3": 5,
+        "Lane 4": 31
+      },
+      "Signal 3": {
+        "Lane 1": 40,
+        "Lane 2": 8,
+        "Lane 3": 25,
+        "Lane 4": 16
+      },
+      "Signal 4": {
+        "Lane 1": 18,
+        "Lane 2": 5,
+        "Lane 3": 28,
+        "Lane 4": 29
+      }
+    },
+    "Area B": {
+      "Signal 1": {
+        "Lane 1": 7,
+        "Lane 2": 23,
+        "Lane 3": 9,
+        "Lane 4": 10
+      },
+      "Signal 2": {
+        "Lane 1": 9,
+        "Lane 2": 27,
+        "Lane 3": 10,
+        "Lane 4": 9
+      },
+      "Signal 3": {
+        "Lane 1": 20,
+        "Lane 2": 19,
+        "Lane 3": 17,
+        "Lane 4": 15
+      },
+      "Signal 4": {
+        "Lane 1": 15,
+        "Lane 2": 21,
+        "Lane 3": 10,
+        "Lane 4": 23
+      }
+    },
+    "Area C": {
+      "Signal 1": {
+        "Lane 1": 33,
+        "Lane 2": 37,
+        "Lane 3": 18,
+        "Lane 4": 12
+      },
+      "Signal 2": {
+        "Lane 1": 40,
+        "Lane 2": 32,
+        "Lane 3": 18,
+        "Lane 4": 6
+      },
+      "Signal 3": {
+        "Lane 1": 33,
+        "Lane 2": 34,
+        "Lane 3": 24,
+        "Lane 4": 31
+      },
+      "Signal 4": {
+        "Lane 1": 32,
+        "Lane 2": 9,
+        "Lane 3": 33,
+        "Lane 4": 26
+      }
+    }
+  }
+}
