@@ -179,8 +179,11 @@ The following modules currently run using simulated data:
 
 Module	Purpose --
 camera_simulator.py	:Generates simulated lane traffic data
+
 reinforcement_controller.py	:Allocates signal timing dynamically
+
 signal_network.py	:Simulates communication between traffic lights
+
 green_corridor.py	:Creates emergency routes for ambulances
 
 These modules demonstrate the system architecture and algorithm design of the proposed solution.
